@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0f">
+<title>Performance · AKNO Copilot</title>
+<link rel="stylesheet" href="assets/copilot.css">
+</head>
+<body data-page="performance">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#9b9cff"/></linearGradient>
+    <linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6366F1" stop-opacity=".42"/><stop offset="1" stop-color="#6366F1" stop-opacity="0"/></linearGradient>
+  </defs>
+  <symbol id="logo" viewBox="0 0 1024 305"><path d="M87.5 289.1C53.2 281.2 25.8 255.5 15.3 221.3C11.5 208.8 11.2 182.1 14.8 169.1C21.9 143.0 41.9 119.0 66.5 106.8C91.8 94.2 128.2 94.5 152.9 107.4L157.2 109.7L161.9 105.0C174.8 92.1 195.7 95.8 203.6 112.5L206.0 117.5L206.0 194.5C206.0 281.1 206.4 275.6 198.4 283.4C192.1 289.5 189.6 290.5 180.0 290.5C170.3 290.5 167.7 289.4 161.3 283.1L157.2 279.0L149.6 282.6C132.3 290.6 106.0 293.3 87.5 289.1ZM264.5 288.6C257.9 285.6 252.5 279.5 250.6 272.9C248.3 265.2 248.2 38.1 250.5 30.4C257.1 8.0 287.8 5.5 298.8 26.4L301.5 31.5L301.8 98.2C301.9 135.0 302.4 165.0 302.9 165.0C304.2 165.0 320.1 151.7 349.9 125.7C378.1 101.2 381.6 99.3 393.8 102.0C409.4 105.4 417.8 120.2 412.8 135.4C410.2 143.3 411.7 141.8 375.9 172.4C366.3 180.6 358.1 187.7 357.6 188.1C357.0 188.6 359.3 191.8 363.0 195.7C366.5 199.5 372.4 205.7 376.0 209.5C406.3 241.6 414.3 250.6 416.2 254.9C423.5 271.8 411.1 291.0 392.9 291.0C382.7 291.0 379.5 289.2 366.4 275.7C354.7 263.7 330.6 238.1 322.1 228.8C319.7 226.1 317.2 224.0 316.6 224.0C316.0 224.0 312.5 226.8 308.8 230.3L302.1 236.5L301.7 254.0C301.3 274.5 300.4 277.6 293.0 284.3C285.1 291.4 274.1 293.1 264.5 288.6ZM473.4 289.1C467.8 286.6 462.4 281.1 459.9 275.6C456.8 268.5 456.9 118.9 460.1 112.4C468.2 95.5 491.5 92.3 503.5 106.3C505.4 108.5 507.0 110.7 507.0 111.2C507.0 112.3 510.7 112.2 511.4 111.1C512.6 109.3 529.4 103.9 538.8 102.4C592.0 93.6 643.6 130.9 651.0 183.5C651.7 188.7 652.0 205.7 651.8 232.0C651.5 272.2 651.5 272.5 649.2 276.9C638.9 296.5 611.1 295.7 601.9 275.5C600.2 271.9 600.0 268.1 600.0 233.9C600.0 185.1 598.8 179.2 586.3 166.7C577.5 157.9 569.9 154.7 556.9 154.2C537.8 153.5 522.5 162.2 514.7 178.3C510.4 187.2 510.0 191.8 510.0 231.6C510.0 266.7 509.9 269.3 508.0 274.4C502.9 288.0 486.4 295.0 473.4 289.1ZM121.5 237.0C154.2 227.6 164.6 187.1 140.4 162.8C131.7 154.0 124.2 150.8 111.5 150.2C95.9 149.5 87.1 153.0 76.6 164.0C45.5 196.6 77.9 249.5 121.5 237.0Z" fill="#fff" fill-rule="evenodd"/><rect x="691" y="98" width="321" height="193" rx="96.5" fill="url(#lgo)"/><circle cx="914.5" cy="194.5" r="70" fill="#fff"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 10.5 12 4l8.5 6.5V19a1.5 1.5 0 0 1-1.5 1.5h-4v-6h-6v6H5A1.5 1.5 0 0 1 3.5 19z"/></symbol>
+  <symbol id="i-traffic" viewBox="0 0 24 24"><path d="M3.5 19.5h17"/><path d="M4.5 15.5 9 11l3.5 3 7-7.5"/><path d="M15.5 6.5h4v4"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8" fill="currentColor"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol>
+  <symbol id="i-seo" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.5-4.5"/><path d="M7.5 12.5 10 10l1.8 1.8 2-2.3"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4.2 17.5a8.5 8.5 0 1 1 15.6 0"/><path d="m12 13.5 4-5"/><circle cx="12" cy="14" r="1.4"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3.5H7A1.5 1.5 0 0 0 5.5 5v14A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3.5V8h4.5"/><path d="M8.5 13h7M8.5 16.5h5"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 20.5 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01" stroke-width="2.6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 4v11m-4.5-4.5L12 15l4.5-4.5"/><path d="M4.5 19.5h15"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 17.5h2"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4.5" y="5" width="15" height="10.5" rx="1.5"/><path d="M2.5 19h19"/></symbol>
+  <symbol id="i-tablet" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M11 17.5h2"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2.5-6 5 12 2.5-6h4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-call" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8.5 3v4M15.5 3v4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3.5 13.8 10l6.7 2-6.7 2L12 20.5 10.2 14l-6.7-2 6.7-2z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.5"/><path d="M2.5 19.5a6.5 6.5 0 0 1 13 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 6.6M18 14a6 6 0 0 1 3.5 5.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  <symbol id="i-funnel" viewBox="0 0 24 24"><path d="M4 5h16l-6 7.5V19l-4-1.5v-5z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3.5 5.5 13.5H12l-1 7 7.5-10H12z"/></symbol>
+  <symbol id="i-weight" viewBox="0 0 24 24"><path d="M6.5 8.5h11l2 11.5h-15z"/><circle cx="12" cy="6" r="2.2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 4 2.4 5 5.4.7-4 3.8 1 5.4L12 16.3 7.2 18.9l1-5.4-4-3.8 5.4-.7z"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 17.5h6M10 20.5h4"/><path d="M12 3.5a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3.5z"/></symbol>
+  <symbol id="i-index" viewBox="0 0 24 24"><path d="M14 3.5H7A1.5 1.5 0 0 0 5.5 5v14A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3.5V8h4.5"/><path d="m9 14 2 2 4-4"/></symbol>
+</svg>
+
+<aside class="side" aria-label="Navigation">
+  <div class="side__logo"><a href="index.html" style="display:contents"><svg viewBox="0 0 1024 305" aria-label="AKNO"><use href="#logo"/></svg></a><span class="mono">Copilot</span></div>
+  <nav class="tabs" id="nav-d"></nav>
+  <div class="side__help" style="margin-top:auto"><svg class="ico"><use href="#i-chat"/></svg><span>Une question ? Ton interlocuteur AKNO répond en moins de 24 h.</span></div>
+  <div class="side__client" style="margin-top:0"><div class="av">MA</div><div><b>Maison Alric</b><span>maisonalric.fr</span></div></div>
+</aside>
+
+<div class="app">
+<main class="main">
+  <section class="hero hero--sub">
+    <div class="tiles" id="tiles" aria-hidden="true"></div>
+    <div class="hero__fade"></div>
+    <header class="top">
+      <div class="av" title="Maison Alric">MA</div>
+      <button class="search" aria-label="Rechercher"><svg class="ico"><use href="#i-search"/></svg>Rechercher<kbd>⌘K</kbd></button>
+      <span class="sp"></span>
+      <button class="ib" aria-label="Notifications"><svg class="ico"><use href="#i-bell"/></svg><span class="dot"></span></button>
+      <a class="ib" href="rapport.html" aria-label="Rapport du mois"><svg class="ico"><use href="#i-doc"/></svg></a>
+    </header>
+    <div class="hc">
+      <p class="print-only">AKNO Copilot · Maison Alric · Performance</p>
+      <div class="brand"><svg viewBox="0 0 1024 305" aria-label="AKNO"><use href="#logo"/></svg><span class="mono">Copilot · Performance</span></div>
+      <p class="label">Score PageSpeed mobile</p>
+      <div class="big num"><b data-count="96">0</b><small>/100</small></div>
+      <div class="delta"><span class="chip"><svg class="ico"><use href="#i-check"/></svg><span>Excellent</span></span>top 5 % des sites web</div>
+      <div><span class="tag mono"><i></i>Données d'exemple · maisonalric.fr</span></div>
+    </div>
+    <div class="pills"><div class="pl"><b>99</b><span>Ordinateur</span></div><div class="pl"><b>99,98 %</b><span>Disponibilité</span></div><div class="pl"><b>182 ms</b><span>Réponse</span></div></div>
+  </section>
+
+  <div class="grid">
+    <article class="card s12 rv">
+      <div class="ch"><div class="ci ci--i"><svg class="ico"><use href="#i-gauge"/></svg></div><div class="ct"><h3>Scores PageSpeed</h3><p>Mesurés par Google · dernier audit le 7 oct. à 06:00</p></div><div class="seg" id="dv"><button class="on" data-v="m">Mobile</button><button data-v="d">Ordinateur</button></div></div>
+      <div class="rings"><div class="rg"><div class="ringc ringc--l"><svg viewBox="0 0 86 86"><circle class="bgc" cx="43" cy="43" r="36"/><circle class="fg" cx="43" cy="43" r="36" data-v="96" id="rg0"/></svg><b class="num" id="rv0">96</b></div>Performance</div><div class="rg"><div class="ringc ringc--l"><svg viewBox="0 0 86 86"><circle class="bgc" cx="43" cy="43" r="36"/><circle class="fg" cx="43" cy="43" r="36" data-v="98" id="rg1"/></svg><b class="num" id="rv1">98</b></div>Accessibilité</div><div class="rg"><div class="ringc ringc--l"><svg viewBox="0 0 86 86"><circle class="bgc" cx="43" cy="43" r="36"/><circle class="fg" cx="43" cy="43" r="36" data-v="100" id="rg2"/></svg><b class="num" id="rv2">100</b></div>Bonnes pratiques</div><div class="rg"><div class="ringc ringc--l"><svg viewBox="0 0 86 86"><circle class="bgc" cx="43" cy="43" r="36"/><circle class="fg" cx="43" cy="43" r="36" data-v="100" id="rg3"/></svg><b class="num" id="rv3">100</b></div>SEO</div></div>
+    </article>
+
+    <article class="card s7 s6 rv">
+      <div class="ch"><div class="ci"><svg class="ico"><use href="#i-bolt"/></svg></div><div class="ct"><h3>Signaux web essentiels</h3><p>Ce que ressentent tes visiteurs, en clair</p></div></div>
+      <div id="vit" style="margin-top:6px"></div>
+      <div class="legend2"><span class="st st--g">Bon</span><span class="st st--m">À surveiller</span><span class="st st--b">Mauvais</span></div>
+    </article>
+
+    <div class="s6" style="display:grid;gap:16px;align-content:start">
+    <article class="card rv">
+      <div class="ch"><div class="ci"><svg class="ico"><use href="#i-traffic"/></svg></div><div class="ct"><h3>Historique du score</h3><p>Performance mobile · 12 semaines</p></div></div>
+      <div class="chart" id="chart"><svg viewBox="0 0 600 200" preserveAspectRatio="none" id="chartsvg"></svg><div class="tip" id="tip"></div></div>
+      <div class="xl mono" id="xl"></div>
+    </article>
+    <article class="card rv">
+      <div class="ch"><div class="ci"><svg class="ico"><use href="#i-weight"/></svg></div><div class="ct"><h3>Poids de la page</h3><p>Page d'accueil · mobile</p></div></div>
+      <div class="row"><div><div class="val num">640<small>Ko</small></div><div class="sub">3 fois plus léger que la moyenne du web</div></div><span class="st st--g">Léger</span></div>
+      <div class="minis"><div><b class="num">18</b><span>Requêtes</span></div><div><b class="num">AVIF</b><span>Images</span></div><div><b class="num">7 oct.</b><span>Dernier audit</span></div></div>
+    </article>
+    </div>
+
+    <article class="card s12 rv">
+      <div class="ch"><div class="ci"><svg class="ico"><use href="#i-pulse"/></svg></div><div class="ct"><h3>Disponibilité</h3><p>Ton site est vérifié toutes les minutes</p></div><span class="live"><i></i>En ligne</span></div>
+      <div class="row">
+        <div><div class="val num">99,98<small>%</small></div><div class="sub">sur 30 jours · 99,99 % sur 90 jours</div></div>
+        <div style="text-align:right"><div class="mono" style="color:var(--faint);font-size:10px">Réponse moyenne</div><div style="font-size:22px;font-weight:800;margin-top:4px" class="num">182 ms</div></div>
+      </div>
+      <div class="ticks ticks--90" id="t90" aria-hidden="true"></div>
+      <div class="xl mono"><span>9 juil.</span><span>90 jours</span><span>7 oct.</span></div>
+      <div class="sep"></div>
+      <div class="mono" style="color:var(--faint);font-size:10px">Incidents · 7 derniers jours</div>
+      <div class="empty"><div class="ci"><svg class="ico"><use href="#i-check"/></svg></div><b>Aucun incident</b><span>Ton site a répondu à chaque vérification.</span></div>
+      <div class="mono" style="color:var(--faint);font-size:10px;margin-top:18px">Plus tôt</div>
+      <div class="list"><div class="li"><div class="lav" style="color:#ffbe5a"><svg class="ico"><use href="#i-clock"/></svg></div><div class="nm"><b>Ralentissement · 9 min</b><span>25 sept., 03:12 · pendant une mise à jour de l'hébergeur</span></div><div class="vv"><span class="st st--g">Résolu</span></div></div></div>
+    </article>
+  </div>
+
+  <div class="foot mono"><svg viewBox="0 0 1024 305"><use href="#logo"/></svg>Copilot · Un service akno.fr</div>
+</main>
+</div>
+
+<nav class="tabs" id="nav-m" aria-label="Navigation"></nav>
+
+<script src="assets/copilot.js"></script>
+<script>
+(()=>{const {$,$$,fmt}=AK;
+const S={m:[96,98,100,100],d:[99,98,100,100]};
+const V={m:[['Affichage du contenu principal','LCP','Le temps pour voir l\'essentiel de la page','1,1 s',1.1,4,'g'],['Réactivité aux clics','INP','Le temps de réaction quand on touche un bouton','84 ms',84,500,'g'],['Stabilité visuelle','CLS','Rien ne bouge pendant le chargement','0,01',.01,.25,'g'],['Premier affichage','FCP','Le moment où quelque chose apparaît','0,9 s',.9,3,'g'],['Temps de blocage','TBT','Petites pauses pendant le chargement','210 ms',210,600,'m'],['Réponse du serveur','TTFB','Le temps que l\'hébergeur met à répondre','182 ms',182,1800,'g']],
+d:[['Affichage du contenu principal','LCP','Le temps pour voir l\'essentiel de la page','0,6 s',.6,4,'g'],['Réactivité aux clics','INP','Le temps de réaction quand on clique','42 ms',42,500,'g'],['Stabilité visuelle','CLS','Rien ne bouge pendant le chargement','0,00',0,.25,'g'],['Premier affichage','FCP','Le moment où quelque chose apparaît','0,4 s',.4,3,'g'],['Temps de blocage','TBT','Petites pauses pendant le chargement','40 ms',40,600,'g'],['Réponse du serveur','TTFB','Le temps que l\'hébergeur met à répondre','182 ms',182,1800,'g']]};
+const ST={g:['st--g','Bon'],m:['st--m','À surveiller'],b:['st--b','Mauvais']};
+const sv=k=>{$('#vit').innerHTML=V[k].map(x=>`<div class="vit"><div><h4>${x[0]}<span>${x[1]}</span></h4><p>${x[2]}</p></div><div class="vr"><b>${x[3]}</b><span class="st ${ST[x[6]][0]}">${ST[x[6]][1]}</span></div><div class="scale"><i></i><i></i><i></i><b style="--x:${Math.max(2,Math.min(98,x[4]/x[5]*100)).toFixed(1)}%"></b></div></div>`).join('');
+  S[k].forEach((v,i)=>{const c=$('#rg'+i);c.dataset.v=v;if(c.closest('.rv.in'))c.style.strokeDashoffset=226.2*(1-v/100);$('#rv'+i).textContent=v})};
+sv('m');$('#dv').addEventListener('pick',e=>sv(e.detail));
+const h=[91,92,92,93,94,93,95,95,96,95,96,96],L=Array.from({length:12},(_,i)=>AK.day(2026,6,20+i*7));
+AK.chart({svg:$('#chartsvg'),box:$('#chart'),tip:$('#tip'),data:h,labels:L,min:84,max:100,tipFmt:v=>v+' / 100'});AK.axis($('#xl'),L,4);
+$('#t90').innerHTML=Array.from({length:90},(_,i)=>`<i${i===77?' class="w" title="25 sept. · ralentissement 9 min"':''}></i>`).join('');
+AK.init();
+})();
+</script>
+</body>
+</html>

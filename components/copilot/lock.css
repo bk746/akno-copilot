@@ -1,0 +1,226 @@
+/* Écran passcode — classes préfixées (import side-effect, compatible Turbopack) */
+
+.ak-lock-wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 360px;
+  margin-inline: auto;
+  padding: 0 20px max(48px, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.ak-lock-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(10, 10, 18, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.ak-lock-brandLogo {
+  display: block;
+  height: 22px;
+  width: auto;
+  max-width: 100%;
+}
+
+.ak-lock-brandLabel {
+  font-family: var(--font-jetbrains), ui-monospace, monospace;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(242, 242, 246, 0.62);
+}
+
+.ak-lock-avatar {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #f2f2f6;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ak-lock-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.ak-lock-subtitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ak-lock-textBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.ak-lock-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.ak-lock-dots--shake {
+  animation: ak-lock-shake 0.45s ease;
+}
+
+@keyframes ak-lock-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-8px);
+  }
+  40% {
+    transform: translateX(8px);
+  }
+  60% {
+    transform: translateX(-6px);
+  }
+  80% {
+    transform: translateX(6px);
+  }
+}
+
+.ak-lock-dot {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.ak-lock-dot--filled {
+  background: #6366f1;
+  border-color: #6366f1;
+  transform: scale(1.05);
+}
+
+.ak-lock-message {
+  min-height: 20px;
+  margin: -8px 0 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ak-lock-message--error {
+  color: #fca5a5;
+}
+
+.ak-lock-message--hint {
+  color: transparent;
+}
+
+.ak-lock-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 72px);
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.ak-lock-key {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #f2f2f6;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font-family: inherit;
+  transition: transform 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.ak-lock-key:active:not(:disabled) {
+  transform: scale(0.94);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.ak-lock-key:disabled {
+  cursor: default;
+}
+
+.ak-lock-key--ghost {
+  visibility: hidden;
+  pointer-events: none;
+  border-color: transparent;
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.ak-lock-key--backspace {
+  font-size: 0;
+}
+
+.ak-lock-key--backspace svg {
+  width: 26px;
+  height: 26px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ak-lock-forgot {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-family: inherit;
+}
+
+.ak-lock-forgot:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
